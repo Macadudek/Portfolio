@@ -21,10 +21,12 @@ body {
     /* overflow-x: hidden; */
 }
 
-
+h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
 
 /* Nav bar */
-
 
 .top-bar {
     background-color: #fff;
@@ -39,10 +41,8 @@ body {
     border-radius: 5px;
 }
 
-.top-bar h1 {
-    font-weight: 500;
+.top-bar h2 {
     font-size: 1rem;
-    text-transform: uppercase;
     font-weight: 400;
 }
 
@@ -80,7 +80,7 @@ body {
     margin-bottom: 30px;
 }
 
-.about-me h2 {
+.about-me h1 {
     color: var(--primary-blue);
     text-align: center;
     font-weight: 500;
@@ -131,8 +131,6 @@ body {
 }
 
 .projects h2 {
-    text-transform: uppercase;
-    font-weight: 500;
     font-size: 2rem;
 }
 
@@ -189,12 +187,15 @@ body {
 /* Wave border */
 
 .spacer {
-    margin-bottom: -10px;
     aspect-ratio: 960/300;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.spacer1 {
+    margin-bottom: -10px;
 }
 
 .spacer2 {
@@ -206,6 +207,10 @@ body {
     background-size: cover;
 }
 
+.spacer3 {
+    margin-bottom: -1px;
+}
+
 .layer1 {
     background-image: url('images/wave-haikei.svg');
 }
@@ -214,6 +219,51 @@ body {
     background-image: url('images/wave-haikei\ \(2\).svg');
 }
 
+.layer3 {
+    background-image: url('images/wave-haikei\ \(3\).svg');
+}
+
+/* Skills and tools section */
+
+.skills-tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-tools h2 {
+    font-size: 1.5rem;
+}
+
+.grid-display {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-gap: 50px; 
+    margin-top: 40px;
+}
+
+.skill-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-div i {
+    font-size: 4rem;
+}
+
+.skill-div h6 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.footer {
+    height: 500px;
+    background-image: linear-gradient(to bottom, #2b73dc, #1081e2, #008ee7, #009be9, #1aa7eb);
+}
 
 /* Colors and other helper elements */
 
@@ -221,21 +271,4 @@ body {
     color: var(--primary-blue);
 }
 
-/* Logos */
-
-.github {
-    background-image: url('images/github-mark.png');
-    width: 30px;
-    height: 30px;
-    background-size: cover;
-    cursor: pointer;
-}
-
-.linkedin {
-    background-image: url('images/iconmonstr-linkedin-3-240.png');
-    width: 30px;
-    height: 30px;
-    background-size: cover;
-    cursor: pointer;
-}
 
