@@ -125,7 +125,6 @@ body {
     background: rgb(43,115,220);
     background: linear-gradient(0deg, rgba(43,115,220,1) 0%, rgba(25,171,236,1) 65%);
     color: #fff;
-    height: 700px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -138,10 +137,53 @@ body {
 }
 
 .project-block {
-    height: 180px;
-    background-color: #fff;
+    background-color: rgba(255,255,255,50%);
     width: 80%;
     border-radius: 10px;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.project-block h4 {
+    text-align: center;
+    transform: translateY(-150%);
+    font-weight: 300;
+}
+
+.project-picture {
+    width: 90%;
+    border-radius: 10px;
+}
+
+.project-block p {
+    width: 80%;
+    margin: 20px auto;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.btn-project {
+    background-image: linear-gradient(to right bottom, #0065ff, #0469f7, #126cee, #206fe5, #2c71db);
+    border-radius: 25px;
+    width: 60%;
+    height: 40px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 9px 2px 19px 3px rgba(0,101,255,0.5);
+    cursor: pointer;
+} 
+
+.btn-project a {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: .8rem;
+    text-decoration: none;
+    color: #fff;
 }
 
 /* Wave border */
