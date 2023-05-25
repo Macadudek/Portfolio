@@ -260,9 +260,32 @@ h2 {
     margin-top: 10px;
 }
 
-.footer {
-    height: 500px;
+.footer-section {
+    height: 400px;
     background-image: linear-gradient(to bottom, #2b73dc, #1081e2, #008ee7, #009be9, #1aa7eb);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer-section h2 {
+    width: 60%; 
+    text-align: center;
+    font-weight: 400;
+}
+
+.fa-github, .fa-linkedin {
+    color: white;
+    font-size: 2.5rem;
+    margin: 10px;
+}
+
+.footer-section p {
+    font-size: .7rem;
+    margin: 10px;
+    letter-spacing: 1px;
 }
 
 /* Colors and other helper elements */
