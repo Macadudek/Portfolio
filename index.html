@@ -5,20 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
     <!-- Nav bar -->
-    <header class="top-bar">
-        <h2>Marcel Dudek</h2>
-        <div class="menu">
-            <div class="menu-line"></div>
-            <div class="menu-line"></div>
-            <div class="menu-line"></div>
-            <div class="menu-line"></div>
+    
+    <header class="nav-bar">
+        <div class="logo">
+            <h2 class="nav-branding">Marcel Dudek</h2>
+        </div>
+        <nav class="navigation">
+            <a href="#" class="nav-link">About Me</a>
+            <a href="#" class="nav-link">Projects</a>
+            <a href="#" class="nav-link">Skills</a>
+            <a href="#" class="nav-link">Contact Me</a>
+        </nav>
+        <div class="toggle-box">
+            <a href="#"><i class="fa-solid fa-bars menu"></i><i class="fa-solid fa-xmark close"></i></a>
         </div>
     </header>
-
+    
     <!-- Section 1 (about me) -->
     <section class="about-me">
         <div class='profile-photo'></div>
@@ -84,6 +91,10 @@
                 <h6>JavaScript</h6>
             </div>
             <div class="skill-div">
+                <i class="fa-brands fa-sass"></i>
+                <h6>Sass</h6>
+            </div>
+            <div class="skill-div">
                 <i class="fa-brands fa-shopify"></i>
                 <h6>Shopify</h6>
             </div>
@@ -105,7 +116,6 @@
         <div class="btn-project"><a href="#">Send me email</a></div>
         <p>© 2023 MARCEL DUDEK</p>
     </footer>
-
       <script src="https://kit.fontawesome.com/5275b656bd.js" crossorigin="anonymous"></script>
 </body>
 </html>
